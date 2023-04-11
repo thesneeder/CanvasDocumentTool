@@ -1,0 +1,19 @@
+{
+  "name": "Canvas thing i guess",
+  "description": "Gets the canvas document from the iframe idk man as",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "icons/400-TackShooter.png"
+  },
+  "permissions": [
+    "tabs"
+  ],   
+  "content_scripts":[
+    {
+    "matches": ["https://canvas.auckland.ac.nz/*"],
+    "include_globs": ["*canvas.auckland.ac.nz/courses/?????/files/?????????module*"],
+    "js": ["scripts/content.js"]
+    }
+  ]
+}
