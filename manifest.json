@@ -5,10 +5,7 @@
   "manifest_version": 3,
   "action": {
     "default_icon": "icons/400-TackShooter.png"
-  },
-  "permissions": [
-    "tabs"
-  ],   
+  }, 
   "content_scripts":[
     {
     "matches": ["https://canvas.auckland.ac.nz/*"],
